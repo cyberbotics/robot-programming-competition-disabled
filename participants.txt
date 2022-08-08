@@ -1,3 +1,3 @@
-repository:https://github.com/ThomasOliverKimble/robot_programming:performance:99%
-repository:https://github.com/ThomasOliverKimble/robot_programming1:performance:76%
-repository:https://github.com/ThomasOliverKimble/robot_programming2:performance:83%
+repository:https://github.com/ThomasOliverKimble/robot_programming:performance:0.987345:performance-string:99%
+repository:https://github.com/ThomasOliverKimble/robot_programming1:performance:0.763124:performance-string:76%
+repository:https://github.com/ThomasOliverKimble/robot_programming2:performance:0.827942:performance-string:83%
