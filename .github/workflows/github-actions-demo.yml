@@ -11,7 +11,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Record and deploy the animation
-        uses: cyberbotics/webots-animation-action@feature-benchmark
+        uses: cyberbotics/benchmark-record-action@feature-benchmark-record
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BOT_PAT_KEY: ${{ secrets.BOT_PAT_KEY }}
