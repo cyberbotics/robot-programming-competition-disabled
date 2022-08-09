@@ -1,4 +1,7 @@
 publish: true
 type: benchmark
 animation:
+  worlds:
+    - file: worlds/robot_programming.wbt
+      duration: 5
 dockerCompose: theia:webots-project/controllers/move/
