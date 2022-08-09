@@ -8,6 +8,8 @@ jobs:
   record:
     runs-on: ubuntu-latest
     steps:
+      - name: Add safe directory
+        run: git config --global --add safe.directory /github/workspace
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Record and deploy the animation
