@@ -1,3 +1,4 @@
 publish: true
 type: benchmark
+animations:
 dockerCompose: theia:webots-project/controllers/move/
