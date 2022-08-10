@@ -18,7 +18,7 @@ robot = Supervisor()
 
 timestep = int(robot.getBasicTimeStep())
 
-thymio = robot.getFromDef("THYMIO2")
+thymio = robot.getFromDef("BENCHMARK_ROBOT")
 translation = thymio.getField("translation")
 
 tx = 0
