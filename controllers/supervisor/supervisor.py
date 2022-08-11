@@ -4,6 +4,16 @@ from controller import Supervisor
 import os
 import sys
 
+def stop_recording(robot):
+  if robot.getFromDef("ANIMATION_RECORDER_SUPERVISOR"):
+      for _ in range(50):
+          robot.step(timestep)
+      robot.animationStopRecording()
+      for _ in range(10):
+          robot.step(timestep)
+      print('The animation is saved')
+      robot.simulationQuit(0)
+
 """ try:
     includePath = "../../../include"
     includePath.replace('/', os.sep)
@@ -42,6 +52,7 @@ while robot.step(timestep) != -1:
         while message:
             if message.startswith("success:"):
                 print(message[9:])
+                stop_recording(robot)
                 break
             message = robot.wwiReceiveText()
 
