@@ -1,4 +1,4 @@
-name: Record animation
+name: Record and update Benchmark animations
 on:
   push:
 # Uncomment to run every midnight
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Record and deploy the animation
+      - name: Record and update Benchmark animations
         uses: cyberbotics/benchmark-record-action@feature-benchmark-record
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
