@@ -11,7 +11,6 @@ robot = Robot()
 
 # Print the program output on the console
 print("Move the motors of the Thymio II to position " + str(target) + ".")
-sys.stderr.write("This is a sample error message.\n")
 
 # Set the target position of the left and right wheels motors.
 robot.getDevice("motor.left").setPosition(target)
