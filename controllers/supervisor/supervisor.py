@@ -11,7 +11,7 @@ def stop_recording(robot):
       robot.animationStopRecording()
       for _ in range(10):
           robot.step(timestep)
-      print('The animation is saved')
+      print('Benchmark completed. The animation is saved.')
       robot.simulationQuit(0)
 
 """ try:
