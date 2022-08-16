@@ -50,7 +50,7 @@ while robot.step(timestep) != -1:
             running = False
             name = 'Robot Programming'
             performance = percent
-            performanceString = str(round(performance * 100)) + '%'
+            performanceString = str(round(percent * 100, 2)) + '%'
             message = 'success:' + name + ':' + performance + ':' + performanceString
             benchmarkPerformance(message, robot)
         else:
