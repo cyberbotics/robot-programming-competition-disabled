@@ -47,8 +47,12 @@ while robot.step(timestep) != -1:
         if percent < 0:
             percent = 0
         if t[0] < -0.01 and abs(t[0] - tx) < 0.0001:  # away from starting position and not moving any more
-            message = "complete"
             running = False
+            name = 'Robot Programming'
+            performance = percent
+            performanceString = str(round(performance * 100)) + '%'
+            message = 'success:' + name + ':' + performance + ':' + performanceString
+            benchmarkPerformance(message, robot)
         else:
             message = "percent"
         message += ":" + str(percent)

@@ -9,8 +9,8 @@ let benchmarkPerformance = 0;
 window.robotWindow.receive = function(message, robot) {
   if (message.startsWith('percent:'))
     document.getElementById('achievement').innerHTML = metricToString(parseFloat(message.substr(8)));
-  else if (message.startsWith('complete:')) {
-    benchmarkPerformance = parseFloat(message.substr(9));
+  else if (message.startsWith('success:')) {
+    benchmarkPerformance = message.split(':')[2]
     const benchmarkPerformanceString = metricToString(benchmarkPerformance);
     document.getElementById('achievement').innerHTML = benchmarkPerformanceString;
     document.getElementById('achievement').style.color = 'green';
