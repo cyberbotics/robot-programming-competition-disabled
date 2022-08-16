@@ -1,6 +1,5 @@
 #VRML_SIM R2022b utf8
 
-EXTERNPROTO "../protos/RobotProgrammingBenchmark.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/master/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/master/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/master/projects/objects/floors/protos/CircleArena.proto"
@@ -23,25 +22,40 @@ WorldInfo {
     }
   ]
 }
+
 Viewpoint {
   orientation 0.22852818692454097 -0.3392704292446562 -0.9125077772935027 5.090665724609216
   position -0.720382336266731 -1.1273242494093503 0.6798160854057501
 }
+
 TexturedBackground {
 }
+
 TexturedBackgroundLight {
 }
+
 CircleArena {
   wallThickness 0.05
 }
+
 DEF BENCHMARK_ROBOT Thymio2 {
   rotation 0 0 1 3.14159
   controller "move"
   controllerArgs []
   window "<none>"
 }
-RobotProgrammingBenchmark {
+
+DEF BENCHMARK_SUPERVISOR Robot {
+  controller "supervisor"
+  window "robot_programming_benchmark"
+  children [
+    Emitter {
+      channel 1024
+    }
+  ]
+  supervisor TRUE
 }
+
 Transform {
   translation -0.25 0 0
   children [
