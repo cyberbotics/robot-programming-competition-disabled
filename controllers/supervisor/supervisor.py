@@ -4,14 +4,21 @@ from controller import Supervisor
 import os
 import sys
 
+def benchmarkPerformance(message, robot):
+    benchmarkName = message.split(':')[1]
+    benchmarkPerformance = message.split(':')[2]
+    benchmarkPerformanceString = message.split(':')[3]
+    print(benchmarkName + ' Benchmark complete! Your performance was ' + benchmarkPerformanceString);
+    stop_recording(robot)
+
 def stop_recording(robot):
   if robot.getFromDef("ANIMATION_RECORDER_SUPERVISOR"):
       for _ in range(50):
           robot.step(timestep)
       robot.animationStopRecording()
+      print('Benchmark completed. The animation is saved.')
       for _ in range(10):
           robot.step(timestep)
-      print('Benchmark completed. The animation is saved.')
       robot.simulationQuit(0)
 
 """ try:
@@ -51,8 +58,7 @@ while robot.step(timestep) != -1:
         message = robot.wwiReceiveText()
         while message:
             if message.startswith("success:"):
-                print(message[9:])
-                stop_recording(robot)
+                benchmarkPerformance(message, robot)
                 break
             message = robot.wwiReceiveText()
 

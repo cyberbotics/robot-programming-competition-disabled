@@ -24,12 +24,12 @@ window.robotWindow.receive = function(message, robot) {
 };
 
 function showBenchmarkPerformance(robotWindow, benchmarkName, benchmarkPerformance, benchmarkPerformanceString) {
-  robotWindow.send('success: ' + benchmarkName + ' Benchmark complete! Your performance was ' + benchmarkPerformanceString);
-  console.log('Testing...');
+  robotWindow.send('success:' + benchmarkName + ':' + benchmarkPerformance + ':' + benchmarkPerformanceString);
+  /* console.log('Testing...');
   document.getElementById('connect-button').style.color('violet');
   console.log('Creating Benchmark instance.');
   const benchmark = new Benchmark();
   benchmark.printMessage('Test message.');
-  benchmark.printParentUrl();
+  benchmark.printParentUrl(); */
   return true;
 }
