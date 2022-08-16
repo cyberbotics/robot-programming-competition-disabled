@@ -2,5 +2,5 @@ publish: true
 type: benchmark
 world:
   file: worlds/robot_programming.wbt
-  duration: 5
+  max-duration: 30
 dockerCompose: theia:webots-project/controllers/move/
