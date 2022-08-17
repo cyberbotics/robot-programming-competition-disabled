@@ -10,11 +10,13 @@ window.robotWindow.receive = function(message, robot) {
   if (message.startsWith('percent:'))
     document.getElementById('achievement').innerHTML = metricToString(parseFloat(message.substr(8)));
   else if (message.startsWith('success:')) {
-    benchmarkPerformance = message.split(':')[2]
+    const newMessage = message.replace('success', 'confirm');
+    this.send(newMessage)
+    /* benchmarkPerformance = message.split(':')[2]
     const benchmarkPerformanceString = metricToString(benchmarkPerformance);
     document.getElementById('achievement').innerHTML = benchmarkPerformanceString;
     document.getElementById('achievement').style.color = 'green';
-    showBenchmarkPerformance(this, benchmarkName, benchmarkPerformance, benchmarkPerformanceString);
+    showBenchmarkPerformance(this, benchmarkName, benchmarkPerformance, benchmarkPerformanceString); */
   } else
     console.log("Received unknown message for robot '" + robot + "': '" + message + "'");
 

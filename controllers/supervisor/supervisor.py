@@ -53,12 +53,14 @@ while robot.step(timestep) != -1:
         message += ":" + str(percent)
         robot.wwiSendText(message)
         tx = t[0]
-"""     else:  # wait for record message
+    else:  # wait for record message
         message = robot.wwiReceiveText()
         while message:
-            if message.startswith("success:"):
+            if message.startswith("confirm:"):
+                print("WINDOW MESSAGE:", message)
+            """ if message.startswith("success:"):
                 benchmarkPerformance(message, robot)
-                break
-            message = robot.wwiReceiveText() """
+                break """
+            message = robot.wwiReceiveText()
 
 robot.simulationSetMode(Supervisor.SIMULATION_MODE_PAUSE)
