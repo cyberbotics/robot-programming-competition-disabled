@@ -5,16 +5,15 @@ import os
 import sys
 
 def benchmarkPerformance(message, robot):
-    benchmarkName = message.split(':')[1]
-    benchmarkPerformance = message.split(':')[2]
-    benchmarkPerformanceString = message.split(':')[3]
-    print(benchmarkName + ' Benchmark complete! Your performance was ' + benchmarkPerformanceString)
+    benchmark_name = message.split(':')[1]
+    benchmark_performance_string = message.split(':')[3]
+    print(benchmark_name + ' Benchmark complete! Your performance was ' + benchmark_performance_string)
     if robot.getFromDef("ANIMATION_RECORDER_SUPERVISOR"):
-        stop_recording(robot)
+        stop_recording(robot, message)
 
-def stop_recording(robot):
+def stop_recording(robot, message):
     emitter = robot.getDevice('emitter')
-    emitter.send("done".encode('utf-8'))
+    emitter.send(message.encode('utf-8'))
 
 """ try:
     includePath = "../../../include"
