@@ -15,7 +15,6 @@ def benchmarkPerformance(message, robot):
 def stop_recording(robot):
     emitter = robot.getDevice('emitter')
     emitter.send("done".encode('utf-8'))
-    robot.getFromDef("BENCHMARK_SUPERVISOR").restartController()
 
 """ try:
     includePath = "../../../include"
