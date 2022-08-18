@@ -1,6 +1,6 @@
 # Robot Programming Benchmark
 
-[![Page Badge](https://badgen.net/badge/icon/View?label=Page)](https://cyberbotics.github.io/benchmark-page?url=?url=https://github.com/cyberbotics/robot-programming-benchmark/blob/main/worlds/robot_programming.wbt)
+[![Page Badge](https://badgen.net/badge/icon/Page?label=Benchmark)](https://cyberbotics.github.io/benchmark-page?url=?url=https://github.com/cyberbotics/robot-programming-benchmark/blob/main/worlds/robot_programming.wbt)
 
 ## Description
 Learn how to program a robot, save your controller program, revert and run the simulation.
