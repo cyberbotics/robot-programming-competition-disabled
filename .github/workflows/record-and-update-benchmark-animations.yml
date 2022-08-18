@@ -11,7 +11,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Record and update Benchmark animations
-        uses: cyberbotics/benchmark-record-action@feature-benchmark-record
+        uses: cyberbotics/benchmark-record-action@main
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BOT_PAT_KEY: ${{ secrets.BOT_PAT_KEY }}
