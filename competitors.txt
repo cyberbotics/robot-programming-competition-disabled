@@ -2,3 +2,4 @@
 4:ThomasOliverKimble/robot-programming-benchmark-controller1:0.6638186224762956:66.38%:2022-09-05
 7:ThomasOliverKimble/robot-programming-benchmark-controller2:0.4109811591867316:41.1%:2022-09-05
 8:ThomasOliverKimble/robot-programming-benchmark-controller3:0.83053530512887:83.05%:2022-09-05
+12:Jean-Eudes-le-retour/thymio-controller-benchmark
