@@ -1,5 +1,5 @@
 import RobotWindow from 'https://cyberbotics.com/wwi/R2022b/RobotWindow.js';
-import Benchmark from 'https://cyberbotics.com/wwi/testingR2022b/Benchmark.js';
+//import Benchmark from 'https://cyberbotics.com/wwi/testingR2022b/Benchmark.js';
 /* global sendBenchmarkRecord, showBenchmarkRecord, showBenchmarkError */
 
 window.robotWindow = new RobotWindow();
