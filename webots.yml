@@ -1,4 +1,4 @@
-publish: true
+publish: false
 type: benchmark
 world:
   file: worlds/robot_programming.wbt
