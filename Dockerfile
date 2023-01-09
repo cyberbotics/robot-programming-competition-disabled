@@ -1,4 +1,4 @@
-FROM cyberbotics/webots.cloud:R2022b
+FROM cyberbotics/webots.cloud:R2023a
 ARG PROJECT_PATH
 RUN mkdir -p $PROJECT_PATH
 COPY . $PROJECT_PATH
