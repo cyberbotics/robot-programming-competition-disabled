@@ -1,20 +1,36 @@
+<span id="title">
+
 # Robot Programming Competition
+
+</span>
 
 [![webots.cloud - Competition](https://img.shields.io/badge/webots.cloud-Competition-007ACC)][1]
 
 ## Description
+
+<span id="description">
+
 Learn how to program a simple wheeled robot using the Python language, GitHub and the Webots simulator.
 The goal of this competition is simply to drive the robot to achieve a precise location.
+
+</span>
 
 <p align="center">
   <img src="./preview/thumbnail.jpg">
 </p>
 
 ## Information
+
+<span id="information">
+
 - Difficulty: Middle School
 - Robot: Thymio2
 - Language: Python
 - Commitment: A few minutes
+
+</span>
+
+---
 
 ## How to Participate
 
