@@ -11,7 +11,7 @@ The goal of this competition is simply to drive the robot to achieve a precise l
 </p>
 
 ## Information
-- Difficulty: 1
+- Difficulty: Middle School
 - Robot: Thymio2
 - Language: Python
 - Commitment: A few minutes
