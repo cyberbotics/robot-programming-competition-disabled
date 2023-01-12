@@ -1,4 +1,4 @@
-# Robot Programming Benchmark
+# Robot Programming Competition
 
 [![Page Badge](https://badgen.net/badge/icon/Benchmark?label=Page)](https://cyberbotics.github.io/benchmark-page?url=https://github.com/cyberbotics/robot-programming-benchmark/blob/main/worlds/robot_programming.wbt)
 
