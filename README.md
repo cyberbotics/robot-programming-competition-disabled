@@ -1,6 +1,6 @@
 # Robot Programming Competition
 
-[![Page Badge](https://badgen.net/badge/icon/Benchmark?label=Page)](https://cyberbotics.github.io/benchmark-page?url=https://github.com/cyberbotics/robot-programming-benchmark/blob/main/worlds/robot_programming.wbt)
+[![webots.cloud - Competition](https://img.shields.io/badge/webots.cloud-Competition-007ACC)][1]
 
 ## Description
 Learn how to program a simple wheeled robot using the Python language, GitHub and the Webots simulator.
