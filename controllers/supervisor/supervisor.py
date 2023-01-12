@@ -32,7 +32,7 @@ while robot.step(timestep) != -1:
         if CI:
             print(f'performance:{performance}')
         else:
-            print(f'Evaluation complete! Your performance is ${performanceString}')
+            print(f'Evaluation complete! Your performance is {performanceString}')
     else:
         message = "percent"
     message += ":" + str(percent)
