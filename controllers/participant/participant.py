@@ -15,3 +15,6 @@ print("Move the motors of the Thymio II to position " + str(target) + ".")
 # Set the target position of the left and right wheels motors.
 robot.getDevice("motor.left").setPosition(target)
 robot.getDevice("motor.right").setPosition(target)
+
+# run the simulation for 10 seconds
+robot.step(10000)
