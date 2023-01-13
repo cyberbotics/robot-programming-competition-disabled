@@ -14,4 +14,4 @@ ENV WORLD_PATH=${WORLD_PATH}
 # - Launching Webots in shell mode to be able to read stdout from competition_record_action script
 CMD xvfb-run -e /dev/stdout -a webots --sysinfo
 
-CMD xvfb-run -e /dev/stdout -a webots --stdout --stderr --batch --mode=fast --no-rendering /usr/local/webots-project/${WORLD_PATH}
+# CMD xvfb-run -e /dev/stdout -a webots --stdout --stderr --batch --mode=fast --no-rendering /usr/local/webots-project/${WORLD_PATH}
