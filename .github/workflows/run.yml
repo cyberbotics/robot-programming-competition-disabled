@@ -49,7 +49,7 @@ jobs:
       - name: Record Animation and Update Performance
         timeout-minutes: 10
         id: webots_test
-        uses: cyberbotics/competition-record-action@gpu
+        uses: cyberbotics/competition-record-action@main
         env:
           INPUT_INDIVIDUAL_EVALUATION: ${{ format('{0}:{1}:{2}', env.PARTICIPANT_REPO_ID, github.event.client_payload.repository, env.PARTICIPANT_REPO_PRIVATE) }}
           INPUT_REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
